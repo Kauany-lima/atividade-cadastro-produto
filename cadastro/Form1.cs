@@ -29,8 +29,12 @@ namespace cadastro
                 produto.lucro = Convert.ToDouble(textBox3);
 
                 double res = ((produto.preco * produto.lucro)/100) + produto.preco;
-                label7.Text = Convert.ToString(res);
                 list.Add(produto);
+
+                foreach (Produto produto1 in list)
+                {
+                   label7.Text = Convert.ToString(res);
+                }
             }
           
          /* List<string> list = new List<string>();
